@@ -29,12 +29,12 @@ for url in sites:
 
     for entry in dom.cssselect('article'):
         time = entry.cssselect('time')[0].attrib['datetime']
-        excerpt = entry.cssselect('p')[0].text_content().strip()
+        text = entry.cssselect('p')[0].text_content().strip()
         post = {
             'title': entry.cssselect('h2 a')[0].text_content().strip(),
             'date': entry.cssselect('time')[0].text_content().strip(),
             'time_ago': arrow.get(time).humanize(),
-            'excerpt': textwrap.fill(excerpt, 69).replace('\n', '\n\t  '),
+            'excerpt': textwrap.fill(text, 69).replace('\n', '\n' + ' ' * 10),
             'link': entry.cssselect('h2 a')[0].get('href')
         }
 
