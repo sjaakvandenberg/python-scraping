@@ -29,7 +29,7 @@ Title   : Introduction to Smart Contracts
 Date    : Thursday, October 16th 2014 at 10:53 (9 months ago)
 URL     : http://svdb.co/posts/2014/10/16/introduction-to-smart-contracts/
 Excerpt : A look at traditional contracts as bearers of rules in light of smart
-	  contracts as autonomous executors of rules.
+          contracts as autonomous executors of rules.
 -------------------------------------------------------------------------------
 Title   : Hello World
 Date    : Sunday, June 1st 2014 at 10:00 (a year ago)
